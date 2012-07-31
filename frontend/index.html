@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<title>OSM 3d</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+		<style>
+			body {
+				font-family: Monospace;
+				background-color: #f0f0f0;
+				margin: 0px;
+				overflow: hidden;
+			}
+		</style>
+	</head>
+	<body>
+		<script src="lib/Three.js"></script>
+		<script src="lib/Stats.js"></script>
+		<script src="lib/jquery.min.js"></script>
+		<script src="class/SimpleDrawing.js"></script>
+		<script src="class/Bounds.js"></script>
+		<script src="class/ObjectsRegister.js"></script>
+		<script src="class/Objects/BuildingRenderer.js"></script>
+		<script src="class/Objects/StreetRenderer.js"></script>
+		<script src="class/Objects/WaterwayRenderer.js"></script>
+		<script src="class/ThreeJsInit.js"></script>
+		<script src="class/Area.js"></script>
+		
+		<script>
+        
+            
+			threeScene = new ThreeScene();
+			threeScene.init();
+            
+			//threeScene.drawGrid();
+			var area;
+			jQuery.getJSON('data/Innenstadt.osm.js', function(data) {
+				// Area definieren
+				var xPixel = 1000;
+				var yPixel = 1000;
+
+				area = new Area(data);
+				area.setPixelBounds(xPixel, yPixel);
+				camera.position.x = 0;
+				camera.position.y = 150;
+				camera.position.z = 0;
+				area.setGeoBounds(
+					data.world.minlat, data.world.minlon,
+					data.world.maxlat, data.world.maxlon
+				);
+
+				var maxDistance  = area.getDistance(data.world.minlat, 0, data.world.maxlat, 0);
+				area.meter = xPixel / maxDistance;
+
+				//console.log(area.meter + " meter");
+
+				// Kamera definieren
+				//camera.lookAt(new THREE.Vector3(200, 0, 200));
+//				animate();
+				area.registerObjects();
+				area.render();			
+
+			});
+			window.requestAnimationFrame(animate, renderer.domElement);	
+			animate();
+			
+
+		</script>
+
+	</body>
+</html>

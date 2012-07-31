@@ -1,0 +1,88 @@
+var fs 			= require('fs');
+var jQuery 		= require('jquery');
+
+function Bounds() {
+	this.minlat = 0.0;
+	this.minlon = 0.0;
+	this.maxlat = 0.0;
+	this.maxlon = 0.0;
+}
+
+function Coordinate() {
+	this.id  = 0;
+	this.lat = 0.0;
+	this.lng = 0.0;
+}
+
+function Way() {
+	this.id = 0;
+	this.coordinates = new Array();
+	this.addCoordinate = function (coordinate) {
+		this.coordinates.push(coordinate);
+	};
+
+	this.tags = {};
+	this.addTag = function (key, value) {
+		this.tags[key] = value;
+	};
+
+}
+
+var filename = '../frontend/data/Innenstadt';
+fs.readFile(filename + '.osm', 'utf8', function (err, data) {
+	if (err) throw err;
+	
+	osm = jQuery(data);
+	bounds = osm.find('bounds');
+
+	scene = new Object();
+	scene.world = new Bounds();
+	scene.world.minlat = bounds.attr('minlat');
+	scene.world.minlon = bounds.attr('minlon');
+	scene.world.maxlat = bounds.attr('maxlat');
+	scene.world.maxlon = bounds.attr('maxlon');
+	scene.points = {};
+	scene.ways   = new Array();
+
+	osm.find('node').each( function () {
+		node = jQuery(this);
+
+		id = node.attr('id');
+		coord = new Coordinate();
+		coord.id  = id;
+		coord.lat = node.attr('lat');
+		coord.lon = node.attr('lon');
+		scene.points[id] = coord
+
+	});
+
+	osm.find('way').each( function () {
+		var way = jQuery(this);
+		var wayId = way.attr('id');
+		var objWay = new Way();
+			objWay.id = wayId;
+ 
+		jQuery(this).find('nd').each( function () {
+			var nodeId = jQuery(this).attr('ref');
+			objWay.addCoordinate(scene['points'][nodeId]);
+		});
+
+		jQuery(this).find('tag').each( function () {
+			var strKey = jQuery(this).attr('k');
+			var strValue = jQuery(this).attr('v');
+			objWay.addTag(strKey, strValue);
+		});
+//		
+		scene.ways.push(objWay);
+
+	});
+	//console.log(scene);
+	fs.writeFile(filename + '.osm.js', JSON.stringify(scene), function(err) {
+	if(err) {
+		console.log(err);
+	} else {
+		console.log("The file was saved! (" + filename + '.osm.js' + ")");
+	}
+}); 
+});
+

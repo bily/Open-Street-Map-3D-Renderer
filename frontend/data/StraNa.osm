@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<osm version="0.6" generator="CGImap 0.0.2">
+ <bounds minlat="50.8433290" minlon="12.9296130" maxlat="50.8441080" maxlon="12.9316460"/>
+ <node id="1434087158" lat="50.8433464" lon="12.9301838" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434087151" lat="50.8431466" lon="12.9302391" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:44Z"/>
+ <node id="1434087157" lat="50.8433112" lon="12.9302353" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434087192" lat="50.8440563" lon="12.9301243" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="612565229" lat="50.8439829" lon="12.9307341" user="Ewi" uid="27109" visible="true" version="5" changeset="4471958" timestamp="2010-04-19T20:20:48Z"/>
+ <node id="1434087180" lat="50.8438031" lon="12.9306386" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="1434087168" lat="50.8435720" lon="12.9298405" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="612564100" lat="50.8442204" lon="12.9308639" user="Ewi" uid="27109" visible="true" version="2" changeset="3606102" timestamp="2010-01-12T21:11:41Z"/>
+ <node id="266625845" lat="50.8456234" lon="12.9266152" user="Ewi" uid="27109" visible="true" version="2" changeset="3714785" timestamp="2010-01-25T21:53:11Z"/>
+ <node id="266625844" lat="50.8449544" lon="12.9262183" user="Ewi" uid="27109" visible="true" version="3" changeset="3714785" timestamp="2010-01-25T21:54:44Z"/>
+ <node id="702245084" lat="50.8439719" lon="12.9313229" user="Ewi" uid="27109" visible="true" version="4" changeset="4471958" timestamp="2010-04-19T20:33:04Z">
+  <tag k="addr:city" v="Chemnitz"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="1"/>
+  <tag k="addr:postcode" v="09111"/>
+  <tag k="addr:street" v="Lerchenstraße"/>
+ </node>
+ <node id="702242034" lat="50.8447408" lon="12.9319666" user="Ewi" uid="27109" visible="true" version="3" changeset="4471958" timestamp="2010-04-19T20:25:47Z"/>
+ <node id="1434087181" lat="50.8438543" lon="12.9309896" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="612564092" lat="50.8439253" lon="12.9305128" user="Ewi" uid="27109" visible="true" version="4" changeset="3606408" timestamp="2010-01-12T21:44:44Z">
+  <tag k="addr:city" v="Chemnitz"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="7"/>
+  <tag k="addr:postcode" v="09111"/>
+  <tag k="addr:street" v="Zöllnerstraße"/>
+ </node>
+ <node id="1434087190" lat="50.8439366" lon="12.9319200" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="1434087210" lat="50.8443423" lon="12.9318012" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:47Z"/>
+ <node id="702242017" lat="50.8446680" lon="12.9319371" user="Ewi" uid="27109" visible="true" version="1" changeset="4471958" timestamp="2010-04-19T20:24:39Z"/>
+ <node id="612561110" lat="50.8438436" lon="12.9298309" user="Ewi" uid="27109" visible="true" version="2" changeset="3606102" timestamp="2010-01-12T21:05:31Z">
+  <tag k="addr:city" v="Chemnitz"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="98"/>
+  <tag k="addr:postcode" v="09111"/>
+  <tag k="addr:street" v="Straße der Nationen"/>
+ </node>
+ <node id="1434087141" lat="50.8429445" lon="12.9301286" user="kaiD" uid="282726" visible="true" version="2" changeset="9314334" timestamp="2011-09-16T09:10:49Z"/>
+ <node id="1434090419" lat="50.8441290" lon="12.9303942" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="25960158" lat="50.8444582" lon="12.9286995" user="kaiD" uid="282726" visible="true" version="3" changeset="9314334" timestamp="2011-09-16T09:10:50Z"/>
+ <node id="266625850" lat="50.8421047" lon="12.9284951" user="Ewi" uid="27109" visible="true" version="3" changeset="3732484" timestamp="2010-01-27T23:34:22Z"/>
+ <node id="1434087187" lat="50.8439015" lon="12.9302198" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="1434087165" lat="50.8435097" lon="12.9301106" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434087177" lat="50.8437376" lon="12.9309220" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434090414" lat="50.8440374" lon="12.9311452" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="702242035" lat="50.8446883" lon="12.9318835" user="Ewi" uid="27109" visible="true" version="3" changeset="4471958" timestamp="2010-04-19T20:25:47Z"/>
+ <node id="266625843" lat="50.8452932" lon="12.9246626" user="Ewi" uid="27109" visible="true" version="4" changeset="3714785" timestamp="2010-01-25T21:54:44Z"/>
+ <node id="1434087191" lat="50.8439858" lon="12.9304263" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="612564085" lat="50.8438677" lon="12.9308132" user="Ewi" uid="27109" visible="true" version="4" changeset="3606408" timestamp="2010-01-12T21:44:46Z">
+  <tag k="addr:city" v="Chemnitz"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="5"/>
+  <tag k="addr:postcode" v="09111"/>
+  <tag k="addr:street" v="Zöllnerstraße"/>
+ </node>
+ <node id="173635877" lat="50.8438330" lon="12.9313873" user="Ewi" uid="27109" visible="true" version="2" changeset="4471958" timestamp="2010-04-19T20:19:14Z"/>
+ <node id="1434087185" lat="50.8438726" lon="12.9315197" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="266836100" lat="50.8458654" lon="12.9326747" user="Ewi" uid="27109" visible="true" version="4" changeset="4471958" timestamp="2010-04-19T20:24:25Z"/>
+ <node id="1434087189" lat="50.8439233" lon="12.9319755" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="702242018" lat="50.8447179" lon="12.9320136" user="Ewi" uid="27109" visible="true" version="1" changeset="4471958" timestamp="2010-04-19T20:24:39Z"/>
+ <node id="266625851" lat="50.8426331" lon="12.9262903" user="Ewi" uid="27109" visible="true" version="4" changeset="3732484" timestamp="2010-01-27T23:34:23Z"/>
+ <node id="1434087195" lat="50.8440796" lon="12.9320691" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="1434087156" lat="50.8432652" lon="12.9302438" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:44Z"/>
+ <node id="266836168" lat="50.8461245" lon="12.9310413" user="Ewi" uid="27109" visible="true" version="2" changeset="4471958" timestamp="2010-04-19T20:56:31Z"/>
+ <node id="1434090410" lat="50.8439535" lon="12.9310936" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="1434087175" lat="50.8437222" lon="12.9315608" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434087154" lat="50.8432050" lon="12.9298454" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:44Z"/>
+ <node id="1434087203" lat="50.8442326" lon="12.9322606" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:47Z"/>
+ <node id="1434087155" lat="50.8432522" lon="12.9296429" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:44Z"/>
+ <node id="1434087163" lat="50.8434421" lon="12.9304037" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434090416" lat="50.8440764" lon="12.9309861" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="1434116552" lat="50.8430151" lon="12.9232698" user="kaiD" uid="282726" visible="true" version="1" changeset="9314564" timestamp="2011-09-16T09:46:29Z"/>
+ <node id="702240346" lat="50.8442085" lon="12.9297513" user="Ewi" uid="27109" visible="true" version="1" changeset="4471958" timestamp="2010-04-19T20:20:29Z"/>
+ <node id="1434090413" lat="50.8440264" lon="12.9311899" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="266625849" lat="50.8442279" lon="12.9298178" user="Ewi" uid="27109" visible="true" version="4" changeset="3714785" timestamp="2010-01-25T21:41:39Z"/>
+ <node id="1434087188" lat="50.8439198" lon="12.9307063" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="1434087172" lat="50.8436721" lon="12.9312053" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="612568951" lat="50.8439727" lon="12.9302232" user="Ewi" uid="27109" visible="true" version="4" changeset="3606408" timestamp="2010-01-12T21:44:42Z">
+  <tag k="addr:city" v="Chemnitz"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="9"/>
+  <tag k="addr:postcode" v="09111"/>
+  <tag k="addr:street" v="Zöllnerstraße"/>
+ </node>
+ <node id="266625846" lat="50.8460385" lon="12.9296497" user="phoo" uid="36934" visible="true" version="1" changeset="513397" timestamp="2008-05-24T14:01:35Z"/>
+ <node id="1434087178" lat="50.8437887" lon="12.9312729" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="1434090418" lat="50.8441216" lon="12.9314439" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="1434090423" lat="50.8441856" lon="12.9306531" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="266836098" lat="50.8438737" lon="12.9313578" user="Ewi" uid="27109" visible="true" version="3" changeset="4471958" timestamp="2010-04-19T20:19:17Z"/>
+ <node id="1434087159" lat="50.8433669" lon="12.9299402" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434087166" lat="50.8435194" lon="12.9294610" user="kaiD" uid="282726" visible="true" version="2" changeset="9314334" timestamp="2011-09-16T09:10:49Z"/>
+ <node id="1434087169" lat="50.8436055" lon="12.9314931" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434087160" lat="50.8433745" lon="12.9306968" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434087179" lat="50.8437969" lon="12.9318363" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="266625842" lat="50.8413234" lon="12.9222254" user="phoo" uid="36934" visible="true" version="2" changeset="513397" timestamp="2008-05-24T14:02:21Z"/>
+ <node id="1434087174" lat="50.8436950" lon="12.9300989" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="702248986" lat="50.8450554" lon="12.9322303" user="Ewi" uid="27109" visible="true" version="1" changeset="4471958" timestamp="2010-04-19T20:40:42Z"/>
+ <node id="1434087183" lat="50.8438576" lon="12.9301941" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="702241963" lat="50.8459275" lon="12.9327748" user="kaiD" uid="282726" visible="true" version="2" changeset="9314195" timestamp="2011-09-16T08:50:09Z"/>
+ <node id="1434090420" lat="50.8441635" lon="12.9312747" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="266625841" lat="50.8406079" lon="12.9250578" user="phoo" uid="36934" visible="true" version="3" changeset="513397" timestamp="2008-05-24T14:02:21Z"/>
+ <node id="1434087176" lat="50.8437333" lon="12.9299337" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434090408" lat="50.8439011" lon="12.9313073" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="1434087167" lat="50.8435632" lon="12.9304738" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434090415" lat="50.8440528" lon="12.9312061" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="1434087194" lat="50.8440588" lon="12.9321564" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="1434087152" lat="50.8431796" lon="12.9302574" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:44Z"/>
+ <node id="30146191" lat="50.8441853" lon="12.9298492" user="kaiD" uid="282726" visible="true" version="5" changeset="9314334" timestamp="2011-09-16T09:10:51Z"/>
+ <node id="1434090411" lat="50.8439926" lon="12.9309345" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="1434087170" lat="50.8436308" lon="12.9301806" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="612564107" lat="50.8438135" lon="12.9311458" user="Ewi" uid="27109" visible="true" version="4" changeset="3606408" timestamp="2010-01-12T21:44:47Z">
+  <tag k="addr:city" v="Chemnitz"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="3"/>
+  <tag k="addr:postcode" v="09111"/>
+  <tag k="addr:street" v="Zöllnerstraße"/>
+ </node>
+ <node id="612561111" lat="50.8435383" lon="12.9302815" user="Ewi" uid="27109" visible="true" version="2" changeset="3606102" timestamp="2010-01-12T21:05:50Z">
+  <tag k="addr:city" v="Chemnitz"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="94"/>
+  <tag k="addr:postcode" v="09111"/>
+  <tag k="addr:street" v="Straße der Nationen"/>
+ </node>
+ <node id="1434090425" lat="50.8442318" lon="12.9304499" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="1434090412" lat="50.8440113" lon="12.9313752" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <node id="702241323" lat="50.8437572" lon="12.9316869" user="Ewi" uid="27109" visible="true" version="2" changeset="4471958" timestamp="2010-04-19T20:22:01Z"/>
+ <node id="1434087184" lat="50.8438693" lon="12.9303581" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="1434087171" lat="50.8436552" lon="12.9300749" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="612561112" lat="50.8434812" lon="12.9305873" user="Ewi" uid="27109" visible="true" version="3" changeset="3606102" timestamp="2010-01-12T21:05:56Z">
+  <tag k="addr:city" v="Chemnitz"/>
+  <tag k="addr:country" v="DE"/>
+  <tag k="addr:housenumber" v="96"/>
+  <tag k="addr:postcode" v="09111"/>
+  <tag k="addr:street" v="Straße der Nationen"/>
+ </node>
+ <node id="266625847" lat="50.8456217" lon="12.9293940" user="Ewi" uid="27109" visible="true" version="3" changeset="3714785" timestamp="2010-01-25T21:39:10Z"/>
+ <node id="1434087162" lat="50.8434141" lon="12.9297377" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434116557" lat="50.8431477" lon="12.9233508" user="kaiD" uid="282726" visible="true" version="1" changeset="9314564" timestamp="2011-09-16T09:46:29Z"/>
+ <node id="1434087186" lat="50.8438958" lon="12.9300304" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:46Z"/>
+ <node id="266625848" lat="50.8453477" lon="12.9306182" user="kaiD" uid="282726" visible="true" version="2" changeset="9314334" timestamp="2011-09-16T09:10:51Z"/>
+ <node id="1434087164" lat="50.8434957" lon="12.9307669" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:45Z"/>
+ <node id="1434090417" lat="50.8440825" lon="12.9305945" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:54Z"/>
+ <way id="55937253" user="Ewi" uid="27109" visible="true" version="2" changeset="4471958" timestamp="2010-04-19T20:22:09Z">
+  <nd ref="173635877"/>
+  <nd ref="702241323"/>
+  <tag k="highway" v="service"/>
+ </way>
+ <way id="130111916" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:59Z">
+  <nd ref="1434087177"/>
+  <nd ref="1434087180"/>
+  <nd ref="1434087188"/>
+  <nd ref="1434087181"/>
+  <nd ref="1434087177"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130111911" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:58Z">
+  <nd ref="1434087178"/>
+  <nd ref="1434087175"/>
+  <nd ref="1434087169"/>
+  <nd ref="1434087172"/>
+  <nd ref="1434087178"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130111945" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:50:03Z">
+  <nd ref="1434087172"/>
+  <nd ref="1434087177"/>
+  <nd ref="1434087181"/>
+  <nd ref="1434087178"/>
+  <nd ref="1434087172"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130111888" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:55Z">
+  <nd ref="1434087166"/>
+  <nd ref="1434087158"/>
+  <nd ref="1434087157"/>
+  <nd ref="1434087156"/>
+  <nd ref="1434087152"/>
+  <nd ref="1434087151"/>
+  <nd ref="1434087141"/>
+  <tag k="highway" v="service"/>
+  <tag k="service" v="parking_aisle"/>
+ </way>
+ <way id="24518358" user="kaiD" uid="282726" visible="true" version="10" changeset="9314564" timestamp="2011-09-16T09:46:35Z">
+  <nd ref="266625841"/>
+  <nd ref="266625842"/>
+  <nd ref="1434116552"/>
+  <nd ref="1434116557"/>
+  <nd ref="266625843"/>
+  <nd ref="266625844"/>
+  <nd ref="266625845"/>
+  <nd ref="266625846"/>
+  <nd ref="266625847"/>
+  <nd ref="266625848"/>
+  <nd ref="266836168"/>
+  <nd ref="266836100"/>
+  <nd ref="702242034"/>
+  <nd ref="702242035"/>
+  <nd ref="266836098"/>
+  <nd ref="266625849"/>
+  <nd ref="266625850"/>
+  <nd ref="266625851"/>
+  <nd ref="266625841"/>
+  <tag k="landuse" v="residential"/>
+ </way>
+ <way id="130111926" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:50:00Z">
+  <nd ref="1434087160"/>
+  <nd ref="1434087163"/>
+  <nd ref="1434087167"/>
+  <nd ref="1434087164"/>
+  <nd ref="1434087160"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130111950" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:50:03Z">
+  <nd ref="1434087186"/>
+  <nd ref="1434087192"/>
+  <nd ref="1434087191"/>
+  <nd ref="1434087184"/>
+  <nd ref="1434087187"/>
+  <nd ref="1434087183"/>
+  <nd ref="1434087186"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130112138" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:57Z">
+  <nd ref="1434090414"/>
+  <nd ref="1434090410"/>
+  <nd ref="1434090411"/>
+  <nd ref="1434090416"/>
+  <nd ref="1434090414"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130112148" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:58Z">
+  <nd ref="1434090415"/>
+  <nd ref="1434090420"/>
+  <nd ref="1434090418"/>
+  <nd ref="1434090412"/>
+  <nd ref="1434090415"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130111919" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:59Z">
+  <nd ref="1434087176"/>
+  <nd ref="1434087186"/>
+  <nd ref="1434087183"/>
+  <nd ref="1434087174"/>
+  <nd ref="1434087176"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130111954" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:50:04Z">
+  <nd ref="1434087165"/>
+  <nd ref="1434087168"/>
+  <nd ref="1434087176"/>
+  <nd ref="1434087174"/>
+  <nd ref="1434087171"/>
+  <nd ref="1434087170"/>
+  <nd ref="1434087165"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130112160" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:56:00Z">
+  <nd ref="1434090410"/>
+  <nd ref="1434090414"/>
+  <nd ref="1434090413"/>
+  <nd ref="1434090415"/>
+  <nd ref="1434090412"/>
+  <nd ref="1434090408"/>
+  <nd ref="1434090410"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="4730378" user="Ewi" uid="27109" visible="true" version="6" changeset="4471958" timestamp="2010-04-19T20:20:35Z">
+  <nd ref="173635877"/>
+  <nd ref="612565229"/>
+  <nd ref="30146191"/>
+  <nd ref="702240346"/>
+  <nd ref="25960158"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="foot" v="yes"/>
+  <tag k="highway" v="residential"/>
+  <tag k="name" v="Zöllnerstraße"/>
+ </way>
+ <way id="130111962" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:50:06Z">
+  <nd ref="1434087185"/>
+  <nd ref="1434087210"/>
+  <nd ref="1434087203"/>
+  <nd ref="1434087194"/>
+  <nd ref="1434087195"/>
+  <nd ref="1434087189"/>
+  <nd ref="1434087190"/>
+  <nd ref="1434087179"/>
+  <nd ref="1434087185"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130111901" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:49:57Z">
+  <nd ref="1434087155"/>
+  <nd ref="1434087162"/>
+  <nd ref="1434087159"/>
+  <nd ref="1434087154"/>
+  <nd ref="1434087155"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="16784180" user="Ewi" uid="27109" visible="true" version="5" changeset="4471958" timestamp="2010-04-19T20:40:43Z">
+  <nd ref="173635877"/>
+  <nd ref="702242017"/>
+  <nd ref="702242018"/>
+  <nd ref="702248986"/>
+  <nd ref="702241963"/>
+  <tag k="bicycle" v="yes"/>
+  <tag k="highway" v="residential"/>
+  <tag k="maxspeed" v="50"/>
+  <tag k="name" v="Lerchenstraße"/>
+ </way>
+ <way id="48201116" user="kaiD" uid="282726" visible="true" version="2" changeset="9314237" timestamp="2011-09-16T08:56:00Z">
+  <nd ref="612565229"/>
+  <nd ref="612564100"/>
+  <tag k="highway" v="service"/>
+  <tag k="service" v="parking_aisle"/>
+ </way>
+ <way id="130112154" user="kaiD" uid="282726" visible="true" version="1" changeset="9314237" timestamp="2011-09-16T08:55:59Z">
+  <nd ref="1434090417"/>
+  <nd ref="1434090419"/>
+  <nd ref="1434090425"/>
+  <nd ref="1434090423"/>
+  <nd ref="1434090417"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130111928" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:50:00Z">
+  <nd ref="1434087180"/>
+  <nd ref="1434087184"/>
+  <nd ref="1434087191"/>
+  <nd ref="1434087188"/>
+  <nd ref="1434087180"/>
+  <tag k="building" v="yes"/>
+ </way>
+ <way id="130111934" user="kaiD" uid="282726" visible="true" version="1" changeset="9314195" timestamp="2011-09-16T08:50:01Z">
+  <nd ref="1434087163"/>
+  <nd ref="1434087165"/>
+  <nd ref="1434087170"/>
+  <nd ref="1434087167"/>
+  <nd ref="1434087163"/>
+  <tag k="building" v="yes"/>
+ </way>
+</osm>
