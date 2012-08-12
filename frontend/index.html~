@@ -16,10 +16,12 @@
 	<body>
 		<script src="lib/Three.js"></script>
 		<script src="lib/Stats.js"></script>
+		<script src="lib/dat.gui.min.js"></script>
 		<script src="lib/jquery.min.js"></script>
 		<script src="class/SimpleDrawing.js"></script>
 		<script src="class/Bounds.js"></script>
 		<script src="class/ObjectsRegister.js"></script>
+		<script src="class/Objects/AreaRenderer.js"></script>
 		<script src="class/Objects/BuildingRenderer.js"></script>
 		<script src="class/Objects/StreetRenderer.js"></script>
 		<script src="class/Objects/WaterwayRenderer.js"></script>
@@ -27,13 +29,33 @@
 		<script src="class/Area.js"></script>
 		
 		<script>
-        
+        	
+
+
             
 			threeScene = new ThreeScene();
 			threeScene.init();
             
-			//threeScene.drawGrid();
-			var area;
+			var GuiText = function() {
+				this.PosX = camera.position.x;
+				this.PosY = camera.position.y;
+				this.PosZ = camera.position.z;
+			};
+			
+			var gui, cameraPositionFolder;
+
+			window.onload = function() {
+					gui = new dat.GUI();
+				var guiText = new GuiText();
+				//	cameraPositionFolder = gui.addFolder('Camera Position');
+				//	cameraPositionFolder.open();
+				gui.add(guiText, 'PosX');
+				gui.add(guiText, 'PosY');
+				gui.add(guiText, 'PosZ');
+			};
+
+			threeScene.drawGrid();
+
 			jQuery.getJSON('data/Innenstadt.osm.js', function(data) {
 				// Area definieren
 				var xPixel = 1000;
@@ -41,9 +63,7 @@
 
 				area = new Area(data);
 				area.setPixelBounds(xPixel, yPixel);
-				camera.position.x = 0;
-				camera.position.y = 150;
-				camera.position.z = 0;
+				
 				area.setGeoBounds(
 					data.world.minlat, data.world.minlon,
 					data.world.maxlat, data.world.maxlon
@@ -58,11 +78,10 @@
 				//camera.lookAt(new THREE.Vector3(200, 0, 200));
 //				animate();
 				area.registerObjects();
-							
+				area.render();			
 
 			});
 			window.requestAnimationFrame(animate, renderer.domElement);	
-			animate();
 			
 
 		</script>

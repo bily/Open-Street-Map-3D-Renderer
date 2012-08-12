@@ -2,10 +2,22 @@ function StreetRenderer(way) {
 	
 	this.way = [];
 	this.width = 10;
-	this.color = 0x505050;
+	this.color = 0x555555;
 
 	this.setWay = function(way) {
 		this.way = way;
+	}
+
+	this.objects = new THREE.Geometry();
+	
+	this.merge = function() {
+		var material = new THREE.MeshBasicMaterial( { color: this.color } );		
+		this.objects.computeFaceNormals();
+		var group	= new THREE.Mesh( this.objects, material );
+group.doubleSided = true;
+		//group.castShadow = true;
+		group.receiveShadow = true;
+		scene.add(group);
 	}
 
 	this.isValid = function() {
@@ -28,18 +40,18 @@ function StreetRenderer(way) {
 			this.width = 5 * area.meter;
 		} else if (this.way.tags['highway'] == 'primary') {
 			this.width = 6 * area.meter;
-			this.color = 0x505050;
+			//this.color = 0x505050;
 		} else if (this.way.tags['highway'] == 'living_street') {
 			this.width = 3 * area.meter;
 		} else if (this.way.tags['footway']
 		|| this.way.tags['highway'] == 'footway'
 		|| this.way.tags['highway'] == 'service'
 		) {
-			this.width = 1 * area.meter;
-			this.color = 0xB0B0B0;
+			this.width = 2 * area.meter;
+			//this.color = 0xB0B0B0;
 		} else {
 			this.width = 10;
-			this.color = 0x505050;
+			//this.color = 0x505050;
 			//console.log(this.way.tags);
 		}
 
@@ -51,6 +63,7 @@ function StreetRenderer(way) {
 		var newCoord;
 		var height = Math.floor(Math.random() * 50) + 20;
 		var coordCount = way.coordinates.length;
+		var oldGeometry = null;
 		for (var i = 0; i < coordCount; i++) {
 		    var geometry = new THREE.Geometry();
 		    var coord = way.coordinates[i];
@@ -71,22 +84,33 @@ function StreetRenderer(way) {
 		        var vector4 = newcoord2; //new THREE.Vector3(newCoord[0], height , newCoord[1]);
 		        
 		        // Dem Objekt hinzuf?gen
-		        geometry.vertices.push(vector1);
-		        geometry.vertices.push(vector2);
+				//if(oldGeometry) {
+					//console.log(1);
+				//	geometry.vertices.push(oldGeometry.vertices[2]);
+				//	geometry.vertices.push(oldGeometry.vertices[3]);
+				//} else {
+					//console.log(2);
+			        geometry.vertices.push(vector1);
+			        geometry.vertices.push(vector2);
+				//}
 		        geometry.vertices.push(vector3);
 		        geometry.vertices.push(vector4);
+				// console.log(geometry.vertices);
 
 // asdasdasd
 //		        geometry.faces.push(new THREE.Face4(0, 2, 3, 1));
 		        geometry.faces.push(new THREE.Face4(0, 1, 2, 3));
+//		        geometry.faces.push(new THREE.Face4(3, 2, 1, 0));
 				var material = new THREE.MeshBasicMaterial( { color: this.color } );
+				oldGeometry = geometry;
 		        var mesh = new THREE.Mesh(geometry, material);
-//				mesh.castShadow = true;
-				mesh.receiveShadow = true;
-		        mesh.doubleSided = true;
-		        scene.add(mesh);
+				THREE.GeometryUtils.merge(this.objects, mesh);
+//				
+		        //
+//		        scene.add(mesh);
 		    }
 		    oldCoord = newCoord;
+
 		}
 	}
 

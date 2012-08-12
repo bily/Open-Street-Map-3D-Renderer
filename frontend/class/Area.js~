@@ -15,11 +15,9 @@ function Area(data) {
 		var lonDec = lon - this.geoBounds.y1;
 		var x = (this.maxPixelX / this.maxDecLat) * latDec;
 		var y = (this.maxPixelY / this.maxDecLon) * lonDec;
+		/* console.log(new Array(x, y))
+asdasdasdsd */
 		return new Array(x, y);
-	}
-
-	this.getMeter = function(multiplikator) {
-		
 	}
 
 	this.getDistance = function(lat1, lon1, lat2, lon2) {
@@ -42,6 +40,12 @@ function Area(data) {
 		this.geoBounds = new Bounds(minLat, minLon, maxLat, maxLon);
 		this.maxDecLat = maxLat - minLat;
 		this.maxDecLon = maxLon - minLon;
+		this.setMeter();
+	}
+
+	this.setMeter = function() {
+		this.meter = this.getDistance(this.minLat, 0, this.maxLat, 0) / this.maxPixelX;
+		//controls.movementSpeed = this.meter * 10;
 	}
 
 	this.setPixelBounds = function(x,y) {
@@ -50,26 +54,60 @@ function Area(data) {
 		this.maxPixelY = y;
 	}
 
+	this.initSkybox = function () {
+		var urlPrefix = "graphics/skybox1/";
+		var urls = [ 
+			urlPrefix + "posx.jpg", 
+			urlPrefix + "negx.jpg",
+			urlPrefix + "posy.jpg", 
+			urlPrefix + "negy.jpg",
+			urlPrefix + "posz.jpg", 
+			urlPrefix + "negz.jpg" 
+		];
+		var textureCube = THREE.ImageUtils.loadTextureCube( urls );
+
+		var shader = THREE.ShaderUtils.lib["cube"];
+/*
+		var uniforms = THREE.UniformsUtils.clone( shader.uniforms );
+			uniforms['tCube'].texture= textureCube; // textureCube has been init before
+
+		var material = new THREE.ShaderMaterial({
+			fragmentShader  : shader.fragmentShader,
+			vertexShader    : shader.vertexShader,
+			uniforms    : uniforms
+		});
+
+*/
+
+
+		// build the skybox Mesh 
+		skyboxMesh  = new THREE.Mesh( new THREE.CubeGeometry( 1000, 1000, 1000, 560, 0, 560, null, true ), material );
+		// add it to the scene
+		scene.add(skyboxMesh);
+	}
+
 	this.render = function() {
 		var wayCount = this.objData.ways.length;
+		this.initSkybox();
+/*
 		for (var indexWay = 0; indexWay < wayCount; indexWay++) {
 			var way = this.objData.ways[indexWay];
             
 			var objWayObject = this.objectRegister.getValidateObject(way);
-				if(objWayObject) {
-					objWayObject.render();
-				}
-
-//			var properties = { color: 0xc4c4c4, }
-
-//            drawPolygon(way, properties);
+			if(objWayObject) {
+				objWayObject.render();
+			}
 		}
+		this.objectRegister.merge();
+*/
+		
 	}
 
 	this.registerObjects = function() {
 		this.objectRegister = new ObjectRegister();
 		this.objectRegister.register(new StreetRenderer());
-		this.objectRegister.register(new WaterwayRenderer());
+		//this.objectRegister.register(new AreaRenderer());
+		//this.objectRegister.register(new WaterwayRenderer());
 		this.objectRegister.register(new BuildingRenderer());
 
 //		this.objectRegister.register(new StreetRenderer());

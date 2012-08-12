@@ -1,15 +1,26 @@
 
-var camera, scene, renderer, container, light, controls, stats;
+var camera, scene, renderer, container, light, controls, stats, clock;
+var mouse = { x: 0, y: 0 };
+
+// var group 		= new THREE.Object3D();					
+// var mergedGeo	= new THREE.Geometry();
 
 function ThreeScene() {
 	
 	// general init
 	this.init = function() {
+
+		clock = new THREE.Clock();
+		
 		this.initContainer();
 		this.initScene();
+		
+		// scene.fog = new THREE.FogExp2(0xEEEEEE, 0.005); // color, density
+		
+
 		this.initStats();
 		this.initCamera();
-		//this.initControls();
+		this.initControls();
 		
 		// Canvas
 //		this.initRenderer();
@@ -22,15 +33,13 @@ function ThreeScene() {
 
 	this.initControls = function() {
 		controls = new THREE.FirstPersonControls( camera );
-        controls.movementSpeed = 70;
+        controls.movementSpeed = 30;
         controls.lookSpeed = 0.05;
-//        controls.noFly = false;
-//        controls.lookVertical = false;
+		controls.lookVertical = false; // Temporary solution; play on flat surfaces only
+		controls.noFly = true;
 
-		camera.position.x = -200;
-		camera.position.y = 200;
-		camera.position.z = -200;
-		camera.lookAt(new THREE.Vector3(200, 0, 200));
+		// Track mouse position so we know where to shoot
+		document.addEventListener( 'mousemove', onDocumentMouseMove, false );
 	}
 	
 	this.initContainer = function() {
@@ -48,6 +57,7 @@ function ThreeScene() {
 
 	this.initScene = function() {
 		scene = new THREE.Scene();
+		scene.fog = new THREE.FogExp2(0xEEEEEE, 0.0025); // color, density
 	};
 
 	this.initLight = function() {
@@ -57,7 +67,7 @@ function ThreeScene() {
 
 	this.initLightWebGL = function() {
 		light = new THREE.SpotLight();
-      	light.position.set( 170, 330, -160 );
+      	light.position.set( 400, 400, 400 );
 		light.castShadow = true;
 	    scene.add(light);
 	}
@@ -70,23 +80,36 @@ function ThreeScene() {
 	};
 
 	this.initCamera = function() {
-		camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 1, 1000 );
-		camera.position.x = -200;
-		camera.position.y = 200;
-		camera.position.z = -200;
-		camera.lookAt(new THREE.Vector3(200, 0, 200));
+		var VIEW_ANGLE = 45,
+			ASPECT = window.innerWidth / window.innerHeight,
+			NEAR = 0.01,
+			FAR = 10000;
+
+		camera = new THREE.PerspectiveCamera(VIEW_ANGLE, ASPECT, NEAR, FAR );
+		camera.position.x = 27;
+		camera.position.y = 10;
+		camera.position.z = 400;
+		
+		// Rathausplatz
+		camera.position.x = 560;
+		camera.position.y = 1;
+		camera.position.z = 560;
+
+
+		camera.lookAt(new THREE.Vector3(1000, 0, 1000));
 
 		scene.add(camera);
 	};
 
 	this.initRendererWebGL = function() {
-        renderer = new THREE.WebGLRenderer({antialias: true});
+        renderer = new THREE.WebGLRenderer({antialias: false});
 		renderer.setSize( window.innerWidth, window.innerHeight );
 		
 		renderer.setClearColorHex(0xEEEEEE, 1.0);
 		renderer.clear();
 
 		renderer.shadowMapEnabled = true;
+renderer.sortObjects = false;
 		container.appendChild(renderer.domElement);
 	}
 
@@ -99,22 +122,17 @@ function ThreeScene() {
 	this.drawGrid = function() {
 		meshGrid = 	new THREE.Mesh( 
 						new THREE.PlaneGeometry( 2000, 2000, 100, 100 ), 
-						new THREE.MeshBasicMaterial( { color: 0xFFFFFF } ) 
+						new THREE.MeshBasicMaterial( { color: 0x008000 } ) 
 					);
 		meshGrid.receiveShadow = true;
 		meshGrid.position.x = 500;
 		meshGrid.position.y = -0.01;
 		meshGrid.position.z = 500;
 		
-		camera.position.x = -200;
-		camera.position.y = 200;
-		camera.position.z = -200;
-		camera.lookAt(new THREE.Vector3(200, 0, 200));
-
-		// console.log(meshGrid);
-
 		scene.add(meshGrid);
 	}
+
+	
 }
 
 function animate() {
@@ -123,11 +141,21 @@ function animate() {
 }
 
 function render() {
-	controls.update();
+	var delta = clock.getDelta();
+	controls.update(delta);
 	stats.update();
+
+	gui.__controllers[0].setValue(camera.position.x).updateDisplay();
+	gui.__controllers[1].setValue(camera.position.y).updateDisplay();
+	gui.__controllers[2].setValue(camera.position.z).updateDisplay();
+
 	renderer.render( scene, camera );
+}
 
-
+function onDocumentMouseMove(e) {
+	e.preventDefault();
+	mouse.x = (e.clientX / window.innerWidth) * 2 - 1;
+	mouse.y = - (e.clientY / window.innerHeight) * 2 + 1;
 }
 
 

@@ -16,4 +16,12 @@ function ObjectRegister() {
 			}
 		}
 	}
+
+	this.merge = function() {
+		var objectCount = this.arrObjects.length;
+		for (var indexObject = 0; indexObject < objectCount; indexObject++) {
+			var renderobject = this.arrObjects[indexObject];
+				renderobject.merge();
+		}
+	}
 }

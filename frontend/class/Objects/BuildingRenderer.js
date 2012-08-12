@@ -1,5 +1,18 @@
 function BuildingRenderer(way) {
 	
+
+	this.objects = new THREE.Geometry();
+
+	this.merge = function() {
+		var material = new THREE.MeshBasicMaterial( { color: 0xC0C0C0 } );		
+		this.objects.computeFaceNormals();
+		var group	= new THREE.Mesh(this.objects, material );
+		group.doubleSided = true;
+		group.castShadow = true;
+		group.receiveShadow = true;
+		scene.add(group);
+	}
+
 	this.setWay = function(way) {
 		this.way = way;
 	}
@@ -26,6 +39,7 @@ function BuildingRenderer(way) {
 	//	height = 10;
     
     var coordCount = way.coordinates.length;
+	var oldgeometry = null;
     for (var i = 0; i < coordCount; i++) {
         var geometry = new THREE.Geometry();
             var coord = way.coordinates[i];
@@ -47,13 +61,17 @@ function BuildingRenderer(way) {
                 //geometry.faces.push(new THREE.Face3(0, 1, 2));
                 //geometry.faces.push(new THREE.Face3(3, 2, 1));
                 geometry.faces.push(new THREE.Face4(0, 2, 3, 1));
+				
+
 //                            var material = new THREE.MeshLambertMaterial( { color: 0xffffff, shading: THREE.FlatShading, overdraw: true } );
 				var material = new THREE.MeshBasicMaterial( { color: color1 } );
                 var mesh = new THREE.Mesh(geometry, material);
                 mesh.doubleSided = true;
-				mesh.castShadow = true;
-				mesh.receiveShadow = true;
-                scene.add(mesh);
+				THREE.GeometryUtils.merge(this.objects, mesh);
+				
+
+
+//                scene.add(mesh);
                 
                 /*
                 var line = new THREE.Line(geometry, new THREE.LineBasicMaterial({ color: 0x000000, linewidth: 2 }));
@@ -69,6 +87,6 @@ function BuildingRenderer(way) {
             }
             oldCoord = newCoord;
         }
-
-}
+		
+	}
 }
